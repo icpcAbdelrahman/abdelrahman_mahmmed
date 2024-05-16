@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="icon" type="image/x-icon" href="../IMG/icon_logo.png">
+    <script>
+    function checkInput() {
+     var inputemail = document.getElementById('email').value;     
+     var inputpass = document.getElementById('password').value;     
+        if (inputemail === "") {
+            alert("Email is Empty");
+        }
+        if (inputpass === "") {
+            alert("password is Empty");
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form action="#" class="login-form">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" onclick="checkInput()" >Login</button>
+            <p class="form-note">Don't have an account? <a href="sginup.html">Sign up</a></p>
+            
+        </form>
+    </div>
+</body>
+</html>

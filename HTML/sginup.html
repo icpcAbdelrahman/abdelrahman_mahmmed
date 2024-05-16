@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" type="image/x-icon" href="../IMG/icon_logo.png">
+    <link rel="stylesheet" href="../CSS/sginup.css">
+    <script>
+        function checkInput() {
+         var inputusername = document.getElementById('username').value;     
+         var inputemail = document.getElementById('email').value;     
+         var inputpass = document.getElementById('password').value; 
+            if (inputusername === "") {
+                alert("username is Empty");
+            }    
+            if (inputemail === "") {
+                alert("Email is Empty");
+            }
+            if (inputpass === "") {
+                alert("password is Empty");
+            }
+        }
+        </script>
+</head>
+<body>
+    <div class="container">
+        <form action="#" class="register-form">
+            <h2>Register</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" onclick="checkInput()" >Register</button>
+            <p class="form-note">Already have an account? <a href="login.html">Login</a></p>
+        </form>
+    </div>
+</body>
+</html>
